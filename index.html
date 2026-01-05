@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Álvaro López-Tola Rodríguez - Portfolio</title>
+  <title>Álvaro López-Tola | Portafolio</title>
   <meta content="Estudiante de Ingeniería Informática en la UCLM con especialización en Tecnologías de la Información" name="description">
-  <meta content="Ingeniería Informática, UCLM, Java, Python, C++, Desarrollo Web, Ciberseguridad, Álvaro López-Tola" name="keywords">
-
-  <!-- Favicons -->
+  
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .modal-content {
+      border-radius: 15px;
+      border: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .modal-header {
+      background: #040b14;
+      color: white;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .modal-title {
+      font-weight: 700;
+    }
+    .modal-body h5 {
+      color: #173b6c;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    .tech-badge {
+      background-color: #e7f1ff;
+      color: #040b14;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 5px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .btn-close-white {
+      filter: invert(1);
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -46,8 +69,6 @@
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
       <h1 class="sitename">Álvaro López-Tola</h1>
     </a>
 
@@ -72,470 +93,413 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Álvaro López-Tola Rodríguez</h2>
-        <p>Soy <span class="typed" data-typed-items="Estudiante de Ingeniería Informática, Apasionado por la Tecnología, Aprendiendo Desarrollo Web, Interesado en Ciberseguridad">Estudiante de Ingeniería Informática</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>Soy <span class="typed" data-typed-items="Estudiante de Ingeniería Informática, Apasionado por la Tecnología, Aprendiendo Desarrollo Web, Interesado en Ciberseguridad"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
+    <section id="logro" class="section light-background" style="padding: 20px 0;">
+      <div class="container" data-aos="fade-up">
+        <div class="alert alert-warning shadow d-flex align-items-center justify-content-center flex-column flex-md-row" role="alert" style="border-left: 5px solid #ffc107; margin-bottom: 0;">
+          <i class="bi bi-trophy-fill flex-shrink-0 me-md-3 mb-2 mb-md-0" style="font-size: 2rem; color: #b8860b;"></i>
+          <div class="text-center text-md-start">
+            <h4 class="alert-heading mb-1">🏆 2º Clasificado - Desafío Digital Builders (NTT Data)</h4>
+            <p class="mb-0">Competición de resolución de casos reales de transformación digital.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- About Section -->
     <section id="about" class="about section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Sobre Mí</h2>
-        <p>Soy una persona abierta y receptiva, siempre dispuesto a escuchar diferentes perspectivas y aprender de los demás. Me defino por mi pasión por la tecnología, mi responsabilidad y compromiso en todo lo que hago. Creo en el trabajo en equipo, la comunicación clara y en la importancia de mantener una actitud positiva frente a los desafíos. Busco constantemente mejorar mis habilidades y contribuir de forma significativa en cualquier proyecto en el que me involucre.</p>
-      </div><!-- End Section Title -->
-
+        <p>Estudiante de último curso de Ingeniería Informática en la ESI (UCLM).</p>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
             <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Estudiante de Ingeniería Informática</h2>
+            <h2>Ingeniero Informático en formación.</h2>
             <p class="fst-italic py-3">
-              Estudiante de último curso de Ingeniería Informática en la ESI (UCLM) con especialización en Tecnologías de la Información. Apasionado por el desarrollo web y de software, así como por la administración de redes y servidores. Busco una oportunidad donde pueda integrarme en un entorno de trabajo real, explorar nuevas herramientas y tecnologías, aplicar la experiencia académica en experiencia práctica, aportando compromiso y muchas ganas de aprender.
+              Estudiante de último curso con especialización en Tecnologías de la Información. Apasionado por el desarrollo web, software y la administración de redes. <strong>Busco integrarme en un entorno real</strong> para transformar mi formación académica en experiencia práctica.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>657 02 03 92</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Ciudad Real, España</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/alvaro-lopez-tola/" target="_blank" style="color: inherit;">Perfil de LinkedIn</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/alvaro-lopez-tola/" target="_blank">Perfil</a></span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Ingeniería Informática</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:alvarolopeztola@gmail.com" style="color: inherit;">alvarolopeztola@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>alvarolopeztola@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Disponibilidad:</strong> <span>Prácticas/Junior</span></li>
                 </ul>
               </div>
             </div>
             <p class="py-3">
-              Competencias destacadas: Desarrollo e Integración Web (HTML5, CSS3, JavaScript, APIs REST), Bases de Datos (MySQL, Oracle), Administración de Sistemas (Windows Server, Cisco), Virtualización (VirtualBox/VMware), Eclipse y Docker. Idiomas: Español nativo, Inglés B1 (preparando B2).
+              Me motiva trabajar en equipo y entender la tecnología a gran escala. Mi objetivo es aprender de expertos senior mientras aporto mis conocimientos en <strong>Java, Python, Docker y Redes</strong>.
             </p>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /About Section -->
-
-    <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Habilidades Técnicas</h2>
-        <p>Tecnologías y herramientas en las que tengo experiencia práctica</p>
-      </div><!-- End Section Title -->
-
+        <p>Stack tecnológico principal</p>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row skills-content skills-animation">
-
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Java</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Python</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>C++</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>HTML5/CSS3/JavaScript</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            <div class="progress"><span class="skill"><span>Java</span> <i class="val">85%</i></span><div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+            <div class="progress"><span class="skill"><span>Python</span> <i class="val">80%</i></span><div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+            <div class="progress"><span class="skill"><span>HTML5/CSS3/JS</span> <i class="val">85%</i></span><div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div></div></div>
           </div>
-
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>SQL (MySQL/Oracle)</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>APIs REST/JSON</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Docker/Virtualización</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Linux/Windows Server</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
+            <div class="progress"><span class="skill"><span>SQL (MySQL)</span> <i class="val">80%</i></span><div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+            <div class="progress"><span class="skill"><span>Docker</span> <i class="val">70%</i></span><div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div></div></div>
+            <div class="progress"><span class="skill"><span>Linux/Redes</span> <i class="val">75%</i></span><div class="progress-bar-wrap"><div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div></div></div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Skills Section -->
-
-    <!-- Soft Skills Section -->
-    <section id="soft-skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Habilidades Personales</h2>
-        <p>Competencias interpersonales y cualidades que definen mi desempeño profesional</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="skill-item">
-              <h4><i class="bi bi-check-circle"></i> Trabajo en Equipo</h4>
-              <p>Capacidad para colaborar eficazmente con otros, aportando ideas y escuchando diferentes perspectivas.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skill-item">
-              <h4><i class="bi bi-check-circle"></i> Comunicación</h4>
-              <p>Habilidad para expresar ideas de forma clara y efectiva, tanto verbalmente como por escrito.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skill-item">
-              <h4><i class="bi bi-check-circle"></i> Resolución de Problemas</h4>
-              <p>Capacidad para analizar situaciones complejas y encontrar soluciones prácticas y efectivas.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skill-item">
-              <h4><i class="bi bi-check-circle"></i> Adaptabilidad</h4>
-              <p>Facilidad para adaptarme a nuevas situaciones, tecnologías y entornos de trabajo.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skill-item">
-              <h4><i class="bi bi-check-circle"></i> Gestión del Tiempo</h4>
-              <p>Organización eficiente de tareas y cumplimiento de plazos sin sacrificar la calidad.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="skill-item">
-              <h4><i class="bi bi-check-circle"></i> Aprendizaje Continuo</h4>
-              <p>Disposición constante a aprender nuevas tecnologías y mejorar mis habilidades.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Soft Skills Section -->
-
-    <!-- Resume Section -->
     <section id="resume" class="resume section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Curriculum</h2>
-        <p>Mi trayectoria académica y experiencia en proyectos de desarrollo de software, ciberseguridad y administración de sistemas.</p>
         <div class="text-center mt-4">
-          <a href="assets/cv/CV_Alvaro_Lopez_Tola.pdf" download class="btn btn-primary" style="padding: 12px 40px; font-size: 16px; border-radius: 50px; background: #149ddd; border: none; text-decoration: none; color: white; display: inline-block;">
-            <i class="bi bi-download"></i> Descargar CV en PDF
+          <a href="assets/cv/CV_Alvaro_Lopez_Tola.pdf" download class="btn btn-primary" style="padding: 10px 30px; border-radius: 50px;">
+            <i class="bi bi-download"></i> Descargar CV
           </a>
         </div>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
         <div class="row">
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 class="resume-title">Resumen</h3>
-
             <div class="resume-item pb-0">
               <h4>Álvaro López-Tola Rodríguez</h4>
-              <p><em>Estudiante de último curso de Ingeniería Informática apasionado por el desarrollo de software y la ciberseguridad. Busco oportunidades para crecer profesionalmente y aportar mis conocimientos en un entorno dinámico y técnico.</em></p>
-              <ul>
-                <li>Ciudad Real, España</li>
-                <li>657 02 03 92</li>
-                <li>alvarolopeztola@gmail.com</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Formación Académica</h3>
+              <p><em>Estudiante de último curso con ganas de aprender y aportar valor.</em></p>
+              <ul><li>Ciudad Real, España</li><li>alvarolopeztola@gmail.com</li></ul>
+            </div>
+            <h3 class="resume-title">Formación</h3>
             <div class="resume-item">
               <h4>Grado en Ingeniería Informática</h4>
-              <h5>2022/2023 - 2025/26 (en curso)</h5>
+              <h5>2022 - Actualidad</h5>
               <p><em>Escuela Superior de Informática (UCLM)</em></p>
-              <p>Especialización en Tecnologías de la Información. Formación integral en desarrollo de software, bases de datos, ciberseguridad, redes y administración de sistemas.</p>
-            </div><!-- Edn Resume Item -->
-
+            </div>
           </div>
-
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Proyectos Académicos</h3>
+            <h3 class="resume-title">Proyectos & Logros</h3>
             <div class="resume-item">
               <h4>Diseño e Integración de Sistemas</h4>
               <h5>2024</h5>
-              <p><em>Proyecto Académico - UCLM</em></p>
-              <ul>
-                <li>Desarrollo de aplicación web para gestión de datos utilizando Java/Python y MySQL</li>
-                <li>Integración de servicios mediante API REST y Pymad</li>
-                <li>Implementación de microservicios y despliegue en contenedores Docker</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Administración de Infraestructura de Red Segura</h4>
-              <h5>2023</h5>
-              <p><em>Proyecto Académico - UCLM</em></p>
-              <ul>
-                <li>Configuración de máquinas virtuales y gestión de redes en Windows Server</li>
-                <li>Implementación de herramienta de rastreo de paquetes (Cisco Packet Tracer)</li>
-                <li>Despliegue de servicios DNS/DHCP y gestión de contenedores Docker</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Logros</h3>
+              <p><em>Proyecto Académico</em></p>
+              <ul><li>Gestión de datos con Java/Python, MySQL y Docker.</li></ul>
+            </div>
             <div class="resume-item">
               <h4>Desafío Digital Builders (NTT Data)</h4>
-              <h5>2023</h5>
-              <p><em>2º Clasificado - Consultoría Tecnológica (Edición 2023)</em></p>
-              <ul>
-                <li>Competición de resolución de casos reales de transformación digital</li>
-                <li>Trabajo en equipo en análisis crítico y defensa de propuesta ante jurado de expertos de consultoría</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
+              <h5>2024 - 2º Clasificado</h5>
+              <p><em>Consultoría Tecnológica</em></p>
+            </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio de Proyectos</h2>
-        <p>Proyectos académicos destacados en desarrollo web, ciberseguridad y administración de sistemas que demuestran mi experiencia práctica.</p>
-      </div><!-- End Section Title -->
+        <h2>Portfolio</h2>
+        <p>Selección de Proyectos</p>
+      </div>
 
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-web">Desarrollo Web</li>
-            <li data-filter=".filter-security">Ciberseguridad</li>
-            <li data-filter=".filter-admin">Administración Sistemas</li>
-          </ul><!-- End Portfolio Filters -->
-
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/gramola.jpg" class="img-fluid" alt="Gramola Virtual">
                 <div class="portfolio-info">
-                  <h4>Sistema de Gestión Web</h4>
-                  <p>Aplicación web con Java/Python y MySQL</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="Sistema de Gestión Web" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Gramola Virtual</h4>
+                  <p>Jukebox Digital con Spotify</p>
+                  <a href="assets/img/portfolio/gramola.jpg" title="Sistema Full Stack para gestión de música en hostelería mediante API de Spotify." data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" title="Ver Detalles" data-bs-toggle="modal" data-bs-target="#modalGramola"><i class="bi bi-file-earmark-text"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/soundtrip.jpg" class="img-fluid" alt="SoundTrip">
                 <div class="portfolio-info">
-                  <h4>Integración API REST</h4>
-                  <p>Microservicios y contenedores Docker</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Integración API REST" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>SoundTrip</h4>
+                  <p>Exploración sonora interactiva</p>
+                  <a href="assets/img/portfolio/soundtrip.jpg" title="SoundTrip" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" title="Ver Detalles" data-bs-toggle="modal" data-bs-target="#modalSoundTrip"><i class="bi bi-file-earmark-text"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-security">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/cve-dtale.jpg" class="img-fluid" alt="Análisis CVE">
                 <div class="portfolio-info">
-                  <h4>Virtualización y Hacking Ético</h4>
-                  <p>Máquinas virtuales seguras y pentesting</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Virtualización y Hacking Ético" data-gallery="portfolio-gallery-security" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Penetration Testing</h4>
+                  <p>Explotación de RCE (CVE-2025-0655)</p>
+                  <a href="assets/img/portfolio/cve-dtale.jpg" title="Investigación y explotación de vulnerabilidad RCE crítica (CVSS 9.8)" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" title="Ver Detalles" data-bs-toggle="modal" data-bs-target="#modalCVE"><i class="bi bi-file-earmark-text"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-security">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="Gestión Web">
                 <div class="portfolio-info">
-                  <h4>Infraestructura de Red Segura (Cisco)</h4>
-                  <p>Cisco Packet Tracer - Red empresarial</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Infraestructura de Red Segura" data-gallery="portfolio-gallery-security" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Gestión Web Integral</h4>
+                  <p>Java / Python / MySQL</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="Gestión Web" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" title="Ver Detalles" data-bs-toggle="modal" data-bs-target="#modalGestion"><i class="bi bi-file-earmark-text"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-admin">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="Redes Cisco">
                 <div class="portfolio-info">
-                  <h4>Windows Server Administration</h4>
-                  <p>DNS/DHCP y servicios empresariales</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="Windows Server Administration" data-gallery="portfolio-gallery-admin" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Infraestructura Segura</h4>
+                  <p>Cisco Packet Tracer / Linux</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Redes Cisco" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" title="Ver Detalles" data-bs-toggle="modal" data-bs-target="#modalRedes"><i class="bi bi-file-earmark-text"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-admin">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="Hacking Ético">
                 <div class="portfolio-info">
-                  <h4>Docker & Contenedores</h4>
-                  <p>Virtualización y despliegue de servicios</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Docker & Contenedores" data-gallery="portfolio-gallery-admin" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="Más Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Lab de Ciberseguridad</h4>
+                  <p>Hacking Ético / Virtualización</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Hacking Ético" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" class="details-link" title="Ver Detalles" data-bs-toggle="modal" data-bs-target="#modalHacking"><i class="bi bi-file-earmark-text"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-          </div><!-- End Portfolio Container -->
-
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contacto</h2>
-        <p>Si necesitas hablar conmigo para oportunidades de prácticas, colaboraciones o cualquier consulta relacionada con mis proyectos, te animo a que me contactes. Estoy siempre disponible para conversar y explorar nuevas posibilidades profesionales.</p>
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
-          <div class="col-lg-5">
-
+          <div class="col-lg-12">
             <div class="info-wrap">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Ubicación</h3>
-                  <p>Ciudad Real, España</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Llámame</h3>
-                  <p>657 02 03 92</p>
-                </div>
-              </div><!-- End Info Item -->
-
+                <div><h3>Ubicación</h3><p>Ciudad Real, España</p></div>
+              </div>
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Envíame un Email</h3>
-                  <p>alvarolopeztola@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98789.06793333895!2d-3.9536709!3d38.9848329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6bc409a6e1e28f%3A0x408ab456d83f670!2sCiudad%20Real!5e0!3m2!1ses!2ses!4v1702000000000!5m2!1ses!2ses" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div><h3>Email</h3><p>alvarolopeztola@gmail.com</p></div>
+              </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <div class="modal fade" id="modalGramola" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Gramola Virtual: Servicio Musical para Hostelería</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <span class="tech-badge">Angular</span>
+          <span class="tech-badge">Java Spring Boot</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">Spotify API</span>
+          <span class="tech-badge">Selenium</span>
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          <h5 class="mt-3">Descripción del Proyecto</h5>
+          <p>Desarrollo de una plataforma web <strong>Full Stack</strong> que moderniza el concepto tradicional de la "jukebox". Permite a los clientes de un bar buscar canciones a través de la API de Spotify y pagar una microtransacción para "colarlas" en la lista de reproducción del local en tiempo real.</p>
+          
+          <h5>Arquitectura y Funcionalidades</h5>
+          <ul>
+            <li><strong>Frontend (Angular):</strong> Interfaz responsive para dos roles: el dueño del bar (gestión de cuenta, suscripciones) y el cliente final (búsqueda de música y pagos).</li>
+            <li><strong>Backend (Java Spring):</strong> API REST robusta que gestiona la lógica de negocio, colas de reproducción, usuarios y seguridad.</li>
+            <li><strong>Integraciones:</strong> Conexión con <em>Spotify Web API</em> para el streaming, pasarela de pagos y servicio de correo para notificaciones y verificación de cuentas.</li>
+            <li><strong>Calidad (QA):</strong> Pruebas funcionales automatizadas con <em>Selenium</em> para verificar flujos críticos como el pago y la inserción de canciones en la cola.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
       </div>
     </div>
+  </div>
 
+  <div class="modal fade" id="modalSoundTrip" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SoundTrip: Exploración Sonora Interactiva</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Leaflet</span>
+          <span class="tech-badge">Web Audio API</span>
+          
+          <h5 class="mt-3">Descripción General</h5>
+          <p>Aplicación web interactiva que transforma el mapa mundial en un reproductor de "viajes sonoros". Al seleccionar un país, el usuario accede a una experiencia inmersiva con paisajes sonoros, información contextual, clima en tiempo real y hora local.</p>
+          <h5>Retos Técnicos</h5>
+          <ul>
+            <li><strong>Audio Avanzado:</strong> Implementación de ecualizador y visualizador en tiempo real con <em>Web Audio API</em>.</li>
+            <li><strong>Persistencia:</strong> Uso de <em>LocalStorage</em> para guardar el "Pasaporte" del usuario sin backend.</li>
+            <li><strong>Integración:</strong> Conexión con APIs externas como <em>Open-Meteo</em>.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCVE" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Análisis de Vulnerabilidad: CVE-2025-0655</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <span class="tech-badge">Metasploit</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">Kali Linux</span>
+          <span class="tech-badge">CVSS 9.8</span>
+
+          <h5 class="mt-3">Descripción del Proyecto</h5>
+          <p>Investigación técnica y prueba de concepto (PoC) sobre una vulnerabilidad crítica de <strong>Ejecución Remota de Código (RCE)</strong> en la librería de análisis de datos <em>D-Tale</em>. El proyecto abarca desde el análisis teórico del fallo hasta su explotación controlada y propuesta de mitigación.</p>
+          
+          <h5>Metodología y Ejecución</h5>
+          <ul>
+            <li><strong>Análisis:</strong> Identificación del vector de ataque a través de filtros personalizados sin sanitización.</li>
+            <li><strong>Explotación:</strong> Automatización del ataque usando <em>Metasploit</em> para inyectar código Python y obtener una <em>Reverse Shell</em> con control total.</li>
+            <li><strong>Entorno:</strong> Laboratorio virtualizado con máquina atacante (Kali) y víctima (Ubuntu Server).</li>
+            <li><strong>Mitigación:</strong> Propuesta de parches, aislamiento de red y configuración de Proxy Inverso.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalGestion" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sistema de Gestión Web Integral</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <span class="tech-badge">Java</span>
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">Docker</span>
+          <h5 class="mt-3">Detalles del Proyecto</h5>
+          <p>Solución web completa para la gestión de datos empresariales, conectando un backend robusto con una interfaz dinámica.</p>
+          <h5>Implementación</h5>
+          <ul>
+            <li><strong>Backend Híbrido:</strong> Lógica en <em>Java</em> y scripts de procesamiento en <em>Python</em>.</li>
+            <li><strong>Integración:</strong> Comunicación mediante <em>API REST</em> para escalabilidad.</li>
+            <li><strong>Despliegue:</strong> Contenerización completa con <em>Docker</em>.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalRedes" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Infraestructura de Red Segura</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <span class="tech-badge">Cisco Packet Tracer</span>
+          <span class="tech-badge">Linux</span>
+          <span class="tech-badge">Windows Server</span>
+          <h5 class="mt-3">Detalles del Proyecto</h5>
+          <p>Diseño y simulación de una infraestructura de red empresarial segura, combinando hardware simulado y servidores reales.</p>
+          <h5>Tareas Realizadas</h5>
+          <ul>
+            <li><strong>Topología:</strong> Implementación de VLANs y enrutamiento con <em>Cisco Packet Tracer</em>.</li>
+            <li><strong>Servicios:</strong> Configuración de DNS, DHCP y Web en <em>Linux</em> y <em>Windows Server</em>.</li>
+            <li><strong>Seguridad:</strong> Reglas de firewall y políticas de acceso.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalHacking" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Lab de Hacking Ético</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <span class="tech-badge">VirtualBox</span>
+          <span class="tech-badge">Kali Linux</span>
+          <span class="tech-badge">Auditoría</span>
+          <h5 class="mt-3">Detalles del Proyecto</h5>
+          <p>Entorno controlado (Sandbox) para prácticas de penetración y aseguramiento de sistemas.</p>
+          <h5>Actividades</h5>
+          <ul>
+            <li><strong>Pentesting:</strong> Identificación de vulnerabilidades en sistemas web.</li>
+            <li><strong>Hardening:</strong> Aplicación de parches y configuraciones robustas.</li>
+            <li><strong>Análisis Forense:</strong> Detección de intrusiones y análisis de logs.</li>
+          </ul>
+        </div>
+        <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Álvaro López-Tola</strong></p>
+      </div>
+      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </div>
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -546,10 +510,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
